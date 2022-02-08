@@ -1,0 +1,28 @@
+
+
+body{
+    padding: 0;
+    margin: 0px;
+}
+
+.top-nav{
+    background-color: #18222b;
+    overflow: hidden;
+}
+
+.top-nav a{
+    color: aliceblue;
+    display: block;
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active{
+    background-color: #009dce;
+}
+
+.top-nav a:hover:not(.active){
+    background-color: #34495e;
+}
