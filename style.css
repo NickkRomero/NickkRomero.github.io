@@ -1,9 +1,20 @@
-header {
-    font-size: 70px;
+@font-face {
+    font-family: 'Freight';
+    src: url(fonts/MADE\ SAONARA\ PERSONAL\ USE.otf);
 }
 
-.header-text {
-    position: fixed;
+@font-face {
+    font-family: Work Sans2;
+    src: url(fonts/WorkSans-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/RightGrotesk-CompactBlack.otf);
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .top-buffer {
@@ -11,17 +22,38 @@ header {
 }
 
 .title {
-    font-size: 120px;
-    font-family: Bebas Neue;
-    margin-bottom: -40px;
+    font-size: 30px;
+    letter-spacing: 21.12px;
+    font-family: Work Sans2;
 }
 
 .title2 {
-    font-size: 120px;
-    font-family: Bebas Neue;
+    font-size: 160px;
+    line-height: 150px;
+    font-family: Freight;
+}
+
+.title-recent {
+    font-size: 224px;
+    line-height: 201.6px;
+    letter-spacing: -1px;
+    color: rgb(23, 25, 27);
+    font-family: Grotesk;
+}
+
+.title-work {
+    font-size: 190px;
+    line-height: 209.6px;
+    letter-spacing: -1px;
+    color: rgb(23, 25, 27);
+    font-family: Freight;
 }
 
 #body-background {
     background-color: rgb(25,27,30);
     background-image: url(https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61e57cced52b4c5f7554323e_Header%20Background.png);
+}
+
+#col-background {
+    background-color: red;
 }
