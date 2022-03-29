@@ -13,8 +13,27 @@
     src: url(fonts/RightGrotesk-CompactBlack.otf);
 }
 
+@font-face {
+    font-family: Flama-bold;
+    src: url(fonts/Flama\ Bold.otf);
+}
+
+@font-face {
+    font-family: Flama-light;
+    src: url(fonts/Flama-Light.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     display: none;
+}
+
+::selection {
+    background: white;
+    color: rgb(25,27,30);
 }
 
 .top-buffer {
@@ -49,11 +68,22 @@ body::-webkit-scrollbar {
     font-family: Freight;
 }
 
-#body-background {
-    background-color: rgb(25,27,30);
-    background-image: url(https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61e57cced52b4c5f7554323e_Header%20Background.png);
+.work-text {
+    font-size: 69.9994px;
+    line-height: 69.9994px;
+    vertical-align: baseline;
+    color: white;
+    font-family: Plain;
 }
 
-#col-background {
-    background-color: red;
+.card-text {
+    font-size: 18px;
+    margin-top: 2%;
+    vertical-align: baseline;
+    letter-spacing: 0.36px;
+}
+
+#body-background {
+    background-color: black;
+    background-image: url(https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61e57cced52b4c5f7554323e_Header%20Background.png);
 }
