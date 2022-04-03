@@ -23,6 +23,11 @@
     src: url(fonts/Flama-Light.otf);
 }
 
+@font-face {
+    font-family: Flama;
+    src: url(fonts/Flama\ Regular.otf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,6 +43,11 @@ body::-webkit-scrollbar {
 
 .top-buffer {
     margin-top: 120px;
+}
+
+a { 
+    color:orange;
+    text-decoration:none;
 }
 
 .title {
@@ -82,6 +92,54 @@ body::-webkit-scrollbar {
     vertical-align: baseline;
     letter-spacing: 0.36px;
 }
+
+/* Work hover transition */
+.card1:hover .img2 {
+    opacity: 0.2;
+  }
+
+.card1:hover .text {
+    opacity: 1;
+}
+
+.text {
+    opacity: 0;
+    color: white;
+    font-family: Flama;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.img2 {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+
+.learnmore-text {
+    color: black;
+    font-family: Flama-bold;
+    font-size: 22px;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.aboutme-text {
+    color: white;
+    font-family: Plain;
+    font-size: 100px;
+    transition: 0.3s ease;
+}
+
+.aboutme-text:hover {
+    color: black;
+    font-family: Plain;
+    font-size: 100px;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+
 
 #body-background {
     background-color: black;
