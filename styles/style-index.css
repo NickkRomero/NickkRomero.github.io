@@ -28,6 +28,12 @@
     src: url(fonts/Flama\ Regular.otf);
 }
 
+@font-face {
+    font-family: Plain;
+    src: url(fonts/Plain-Bold.ttf);
+}
+
+
 html {
     scroll-behavior: smooth;
 }
