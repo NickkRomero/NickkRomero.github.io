@@ -181,32 +181,33 @@ a {
   }
 
   #cookiePopup {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
     background-color: #ffffff;
-    position: absolute;
+    color: black !important;
     font-size: 14px;
-    width: 70vw;
-    max-width: 42.85em;
+    width: 300px;
+    padding: 20px;
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
     font-family: "Poppins", sans-serif;
     text-align: justify;
-    line-height: 1.8em;
-    padding: 2em 1.4em;
     border-radius: 6px;
-    transition: all 0.5s ease-in;
-    z-index: 1000 !important;
-  }
+    visibility: visible; /* Standaard weergave: zichtbaar */
+    z-index: 1000;
+}
   
   #cookiePopup img {
     display: block;
-    width: 3.75em;
-    transform: translateZ(0);
-    position: relative;
-    margin: auto;
+    width: 50px;
+    margin: 0 auto;
   }
+  
   #cookiePopup p {
     text-align: center;
-    margin: 1.4em 0;
+    margin-top: 1.4em;
   }
+  
   #cookiePopup button {
     background-color: #6859fe;
     border: none;
@@ -214,10 +215,10 @@ a {
     font-size: 1.2em;
     padding: 1em 1.4em;
     display: block;
-    position: relative;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 5px;
   }
+
   #cookiePopup a {
     color: #6859fe;
   }
