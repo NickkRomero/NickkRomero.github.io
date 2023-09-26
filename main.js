@@ -1,34 +1,34 @@
-let popUp = document.getElementById("cookiePopup");
-//When user clicks the accept button
-document.getElementById("acceptCookie").addEventListener("click", () => {
-  //Create date object
-  let d = new Date();
-  //Increment the current time by 1 minute (cookie will expire after 1 minute)
-  d.setMinutes(2 + d.getMinutes());
-  //Create Cookie with name = myCookieName, value = thisIsMyCookie and expiry time = 1 minute
-  document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
-  //Hide the popup
-  popUp.style.visibility = "hidden"; // Verberg de popup
-});
-
-//Check if cookie is already present
-const checkCookie = () => {
-  //Read the cookie and split on "="
-  let input = document.cookie.split("=");
-  //Check for our cookie
-  if (input[0] == "myCookieName") {
-    //Hide the popup
-    popUp.classList.add("hide");
-    popUp.classList.remove("show");
-  } else {
-    //Show the popup
-    popUp.classList.add("show");
-    popUp.classList.remove("hide");
-  }
-};
-//Check if cookie exists when page loads
-window.onload = () => {
-  setTimeout(() => {
+document.addEventListener("DOMContentLoaded", () => {
+    let popUp = document.getElementById("cookiePopup");
+    let acceptButton = document.getElementById("acceptCookie");
+  
+    // Voeg een eventlistener toe aan de knop wanneer deze wordt geklikt
+    acceptButton.addEventListener("click", () => {
+      // Maak een datumobject aan
+      let d = new Date();
+      // Verhoog de huidige tijd met 1 minuut (cookie verloopt na 1 minuut)
+      d.setMinutes(2 + d.getMinutes());
+      // Maak een cookie met de naam = myCookieName, waarde = thisIsMyCookie en verloopdatum = 1 minuut
+      document.cookie = "myCookieName=thisIsMyCookie; expires=" + d.toUTCString() + ";";
+      // Verberg het popupvenster
+      popUp.style.visibility = "hidden";
+    });
+  
+    // Controleer of de cookie al aanwezig is
+    const checkCookie = () => {
+      // Lees de cookie en splits op "="
+      let input = document.cookie.split("=");
+      // Controleer of onze cookie bestaat
+      if (input[0] == "myCookieName") {
+        // Verberg het popupvenster
+        popUp.style.visibility = "hidden";
+      } else {
+        // Toon het popupvenster
+        popUp.style.visibility = "visible";
+      }
+    };
+  
+    // Controleer of de cookie bestaat bij het laden van de pagina
     checkCookie();
-  }, 2000);
-};
+  });
+  
