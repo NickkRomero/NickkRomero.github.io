@@ -1,3 +1,7 @@
+function copyMail() {
+  navigator.clipboard.writeText('nk.nickromero@gmail.com');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     let popUp = document.getElementById("cookiePopup");
     let acceptButton = document.getElementById("acceptCookie");
