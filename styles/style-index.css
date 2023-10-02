@@ -208,7 +208,7 @@ a {
     margin-top: 1.4em;
   }
   
-  #cookiePopup button {
+  .accept {
     background-color: #6859fe;
     border: none;
     color: #ffffff;
@@ -218,6 +218,21 @@ a {
     margin: 0 auto;
     border-radius: 5px;
   }
+  
+    .decline-button {
+        background-color: transparent;
+        color: #6859fe !important; /* Geef de tekst dezelfde paarse kleur */
+        cursor: pointer;
+        font-size: 14px;
+        margin-left: 10px; /* Voeg wat ruimte toe tussen de knoppen */
+        border: none !important; /* Verwijder de border */
+    }
+
+    .button-container {
+        display: flex; /* Plaats de knoppen naast elkaar */
+        align-items: center; /* Centreer de knoppen verticaal in hun container */
+        margin-top: 10px; /* Voeg wat ruimte toe tussen de knoppen */
+    }
 
   #cookiePopup a {
     color: #6859fe;

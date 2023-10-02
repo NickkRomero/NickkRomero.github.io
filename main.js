@@ -5,6 +5,7 @@ function copyMail() {
 document.addEventListener("DOMContentLoaded", () => {
     let popUp = document.getElementById("cookiePopup");
     let acceptButton = document.getElementById("acceptCookie");
+    let declineButton = document.getElementById("declineCookie");
   
     // Voeg een eventlistener toe aan de knop wanneer deze wordt geklikt
     acceptButton.addEventListener("click", () => {
@@ -17,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // Verberg het popupvenster
       popUp.style.visibility = "hidden";
     });
+
+      // Voeg een eventlistener toe aan de Decline knop
+  declineButton.addEventListener("click", () => {
+    // Hier kun je eventuele acties ondernemen als de gebruiker weigert (bijvoorbeeld tracking cookies uitschakelen)
+    popUp.style.visibility = "hidden"; // Verberg het popupvenster
+  });
   
     // Controleer of de cookie al aanwezig is
     const checkCookie = () => {
