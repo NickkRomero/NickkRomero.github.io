@@ -178,14 +178,13 @@ a {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  
-  /* Aanpassingen voor de cookiebanner */
-  #cookiePopup {
+}
+
+/* Aanpassingen voor de cookiebanner */
+#cookiePopup {
     position: fixed;
-    bottom: 0; /* Plaats de banner onderaan */
-    left: 50%; /* Plaats de banner in het midden van de pagina */
-    transform: translateX(-50%); /* Centreer horizontaal */
+    bottom: 2em; /* Plaats de banner 2em vanaf de onderkant van de pagina */
+    right: 2em; /* Plaats de banner 2em vanaf de rechterkant van de pagina */
     background-color: #ffffff;
     color: black !important;
     font-size: 12px; /* Maak de tekst kleiner */
@@ -198,20 +197,20 @@ a {
     border-radius: 6px;
     visibility: visible; /* Standaard weergave: zichtbaar */
     z-index: 1000;
-  }
-  
-  #cookiePopup p {
+}
+
+#cookiePopup p {
     margin-top: 0.8em; /* Minder bovenmarge voor de tekst */
     line-height: 1.2; /* Verbeter de leesbaarheid van de tekst */
-  }
-  
-  #cookiePopup a {
+}
+
+#cookiePopup a {
     color: #8f8f8f;
     text-decoration: underline; /* Voeg een onderstreping toe aan de link */
-  }
-  
-  .accept,
-  .decline-button {
+}
+
+.accept,
+.decline-button {
     background-color: #000000;
     border: none;
     color: #ffffff;
@@ -220,21 +219,21 @@ a {
     display: inline-block; /* Plaats de knoppen naast elkaar */
     margin: 0 5px; /* Voeg wat ruimte toe tussen de knoppen */
     border-radius: 4px; /* Rond de hoeken van de knoppen af */
-  }
-  
-  .button-container {
+}
+
+.button-container {
     margin-top: 10px; /* Voeg wat ruimte toe tussen de knoppen en de tekst */
-  }
-  
-  /* Stijl voor de Decline-knop */
-  .decline-button {
+}
+
+/* Stijl voor de Decline-knop */
+.decline-button {
     background-color: transparent;
     color: #000000 !important; /* Geef de tekst dezelfde paarse kleur */
     cursor: pointer;
     font-size: 12px; /* Maak de Decline-knop kleiner */
     margin-left: 10px; /* Voeg wat ruimte toe tussen de knoppen */
     border: none !important; /* Verwijder de border */
-  }
+}
 
 #body-background {
     background-color: black;
