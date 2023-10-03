@@ -179,86 +179,61 @@ a {
     margin: 0;
     box-sizing: border-box;
   }
-
+  
+  /* Aanpassingen voor de cookiebanner */
   #cookiePopup {
     position: fixed;
-    bottom: 2em;
-    right: 2em;
+    bottom: 0; /* Plaats de banner onderaan */
+    left: 50%; /* Plaats de banner in het midden van de pagina */
+    transform: translateX(-50%); /* Centreer horizontaal */
     background-color: #ffffff;
     color: black !important;
-    font-size: 14px;
-    width: 300px;
-    padding: 20px;
+    font-size: 12px; /* Maak de tekst kleiner */
+    width: 80%; /* Maak de banner smaller */
+    max-width: 300px; /* Beperk de maximale breedte */
+    padding: 10px; /* Verminder de ruimte rondom de tekst */
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
     font-family: "Poppins", sans-serif;
-    text-align: justify;
+    text-align: center; /* Centreer de tekst */
     border-radius: 6px;
     visibility: visible; /* Standaard weergave: zichtbaar */
     z-index: 1000;
-}
-  
-  #cookiePopup img {
-    display: block;
-    width: 50px;
-    margin: 0 auto;
   }
   
   #cookiePopup p {
-    text-align: center;
-    margin-top: 1.4em;
+    margin-top: 0.8em; /* Minder bovenmarge voor de tekst */
+    line-height: 1.2; /* Verbeter de leesbaarheid van de tekst */
   }
   
-  .accept {
-    background-color: #6859fe;
+  #cookiePopup a {
+    color: #8f8f8f;
+    text-decoration: underline; /* Voeg een onderstreping toe aan de link */
+  }
+  
+  .accept,
+  .decline-button {
+    background-color: #000000;
     border: none;
     color: #ffffff;
-    font-size: 1.2em;
-    padding: 1em 1.4em;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
+    font-size: 12px; /* Maak de knoppen kleiner */
+    padding: 0.5em 1em; /* Verminder de ruimte rondom de knoppen */
+    display: inline-block; /* Plaats de knoppen naast elkaar */
+    margin: 0 5px; /* Voeg wat ruimte toe tussen de knoppen */
+    border-radius: 4px; /* Rond de hoeken van de knoppen af */
   }
   
-    .decline-button {
-        background-color: transparent;
-        color: #6859fe !important; /* Geef de tekst dezelfde paarse kleur */
-        cursor: pointer;
-        font-size: 14px;
-        margin-left: 10px; /* Voeg wat ruimte toe tussen de knoppen */
-        border: none !important; /* Verwijder de border */
-    }
-
-    .button-container {
-        display: flex; /* Plaats de knoppen naast elkaar */
-        align-items: center; /* Centreer de knoppen verticaal in hun container */
-        margin-top: 10px; /* Voeg wat ruimte toe tussen de knoppen */
-    }
-
-  #cookiePopup a {
-    color: #6859fe;
+  .button-container {
+    margin-top: 10px; /* Voeg wat ruimte toe tussen de knoppen en de tekst */
   }
-  .hide {
-    visibility: hidden;
-    bottom: 0;
-    right: 2em;
-  }
-  .show {
-    visibility: visible;
-    bottom: 2em;
-    right: 2em;
-  }
-  @media only screen and (max-width: 37.5em) {
-    #cookiePopup {
-      width: 100%;
-    }
-    .hide {
-      bottom: 2em;
-      right: 0;
-    }
-    .show {
-      right: 0;
-      bottom: 0;
-    }
+  
+  /* Stijl voor de Decline-knop */
+  .decline-button {
+    background-color: transparent;
+    color: #000000 !important; /* Geef de tekst dezelfde paarse kleur */
+    cursor: pointer;
+    font-size: 12px; /* Maak de Decline-knop kleiner */
+    margin-left: 10px; /* Voeg wat ruimte toe tussen de knoppen */
+    border: none !important; /* Verwijder de border */
   }
 
 #body-background {
