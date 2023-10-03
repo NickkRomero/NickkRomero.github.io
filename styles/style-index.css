@@ -189,8 +189,8 @@ a {
     color: black !important;
     font-size: 12px; /* Maak de tekst kleiner */
     width: 80%; /* Maak de banner smaller */
-    max-width: 300px; /* Beperk de maximale breedte */
-    padding: 10px; /* Verminder de ruimte rondom de tekst */
+    max-width: 250px; /* Beperk de maximale breedte */
+    padding: 12px; /* Verminder de ruimte rondom de tekst */
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
     font-family: "Poppins", sans-serif;
     text-align: center; /* Centreer de tekst */
